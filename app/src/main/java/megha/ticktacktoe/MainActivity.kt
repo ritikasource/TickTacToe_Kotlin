@@ -113,6 +113,14 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"this is a draw",Toast.LENGTH_LONG).show()
             }
         }
+         fun AutoPlay()
+    {
+        var emptycell=ArrayList<Int>()
+for(cellid in 0..9) {
+    if (!(player1.contains(cellid) || player2.contains(cellid))) {
+        emptycell.add(cellid)
+    }
+}
 
     }
 }
